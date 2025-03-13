@@ -1,0 +1,91 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Aptos+Narrow:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Aptos Narrow', sans-serif;
+    background: linear-gradient(135deg, #E3F2FD, #90CAF9, #42A5F5, #1E88E5); /* Light to Deep Blue */
+    color: #001F3F; /* Dark Blue for readability */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    width: 99vw;
+    background: rgba(0, 0, 0, 0.3); /* Lighter Black Transparent */
+    color: white;
+    text-align: center;
+    padding: 15px 0; /* Reduced size */
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+/* Name Styling */
+h1 {
+    font-size: 2.5em;
+    background: linear-gradient(90deg, #1565C0, #1E88E5); /* Deep Blue Gradient */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Section Styling */
+section {
+    padding: 25px;
+    margin: 15px auto;
+    width: 90%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px); /* Keep this constant to prevent weird hover effects */
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Project & Experience Cards */
+.project-card, .exp-card {
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.3); /* Slightly lighter */
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card:hover, .exp-card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.35); /* Slightly lighter on hover */
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Buttons */
+button {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background: linear-gradient(to right, #1565C0, #1E88E5);
+    color: white;
+    box-shadow: 0 5px 15px rgba(30, 136, 229, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(30, 136, 229, 0.5);
+    background: linear-gradient(to right, #1E88E5, #1565C0);
+}
+
+/* Footer */
+footer {
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 0 0 12px 12px;
+}
